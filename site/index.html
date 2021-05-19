@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head><title>My First Heading</title>
-  
-    <style>
-/* all h2 elements */
-h2 {
-  color: red;
-  text-align: center;
-}
-
-
-/* all with class="highlight" */
-.highlight {
-  font-size: 20px;
-  font-weight: bold;
-  font-style: italic;
-  background-color: green;
-  opacity: .6;
-}
-
-/* element with id="mainPoint" */
-#mainPoint {
-  font-size: 24px;
-  font-weight: bold;
-  background-color: red;
-  opacity: .7;
-}
-
-h1 {
-  margin-bottom: 15px;
-}
-
-p {
-  border: 1px solid black;
-  margin-bottom: 15px;
-}
-#p1 {
-  background-color: #A52A2A;
-  width: 150px;
-  height: 150px;
-}
-#p2 {
-  background-color: #DEB887;
-  width: 150px;
-  height: 150px;
-}
-
-  </style>
-  
-  
+  <head>
+    <title>Kate's GIS Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
   </head>
   <body>
 
+    <header>
+      <!--The header part of the page-->
+      <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+          </a>
+      
+        <div class="px-4 py-5 my-5 text-center" style="font-family: 'Poppins', cursive;">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-center">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-lock"></span><br class="hidden-xs"> Work</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs"> Contact</a>
+              </li>
+              <li id="github" class="hidden-xs">
+                <a href="https://katiegis.github.io/">
+                  <span class="glyphicon glyphicon-text-background"></span><br class="hidden-xs"> katiegis@Github</a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div>  
+        </div>
+      </div>
+      </div>
+      </nav>
 
-<h1>practice h1</h1>
-<h2>Subheading 1 (h2)</h2>
-<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
-<p class="highlight">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-<h2>Subheading 2 (h2)</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
-<div>This is the main point of the entire article. So, attribute 
-</div>
-<span>yrdydfvgdfgd</span> 
-<a href="theSubPage.html">go to the sub</a>
-<p id="p1"></p>
-<p id="p2"></p>
+    </header>
+    <main>
+        <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+          
+          
+          <!--<div class="col-lg-6 mx-auto"> -->
+            <p class="lead mb-4">Kate is a GIS Analyst, a fan of data science and a squirrel observer living in Vitoria BC. She likes to explore GIS technologies, bring the best solution to the table and share the excitment with the world. </p>
+           <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-right">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div> -->
+          <!-- </div> -->
+        </div>
+        </div>
+    </main>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
   </body>
   </html>
