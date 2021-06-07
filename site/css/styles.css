@@ -2,6 +2,28 @@ body {
     font-size: 16px;
     color: rgb(206, 135, 206);
     background-color: #ffffff;
+    font-family: 'Poppins', cursive;
+}
+
+.content-head {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(206, 135, 206);
+    background-color: #ffffff;
+    font-family: 'Poppins', cursive;
+}
+
+#content {
+    font-size: 13.5px;
+    color: rgb(102, 102, 102);
+    background-color: #ffffff;
+    font-family: 'Poppins', cursive;
+}
+
+#content-title {
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    background-color: #ffffff;
     font-family: 'Satisfy', cursive;
 }
 

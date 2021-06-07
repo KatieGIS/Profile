@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kate's GIS Recipe</title>
+    <title>Kate's GIS Space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -30,20 +31,21 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
             <ul id="nav-list" class="nav navbar-nav navbar-center">
               <li>
-                <a href="#">
-                  <span class="glyphicon glyphicon-lock"></span><br class="hidden-xs"> Work</a>
-              </li>
-              <li>
-                <a href="#">
+                <a href="#About">
                   <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
               </li>
               <li>
-                <a href="#">
+                <a href="#Work">
+                  <span class="glyphicon glyphicon-lock"></span><br class="hidden-xs"> Work</a>
+              </li>
+              
+              <li>
+               <a href="katemymy@gmail.com">
                   <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs"> Contact</a>
               </li>
               <li id="github" class="hidden-xs">
-                <a href="https://katiegis.github.io/">
-                  <span class="glyphicon glyphicon-text-background"></span><br class="hidden-xs"> katiegis@Github</a>
+                <a href="https://github.com/KatieGIS">
+                  <span class="fa fa-github"></span><br class="hidden-xs">GitHub</a>
               </li>
             </ul><!-- #nav-list -->
           </div><!-- .collapse .navbar-collapse -->
@@ -59,16 +61,66 @@
         <div class="px-4 py-5 my-5 text-center">
           
           
-          <!--<div class="col-lg-6 mx-auto"> -->
-            <p class="lead mb-4">Kate is a GIS Analyst, a fan of data science and a squirrel observer living in Vitoria BC. She likes to explore GIS technologies, bring the best solution to the table and share the excitment with the world. </p>
-           <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-right">
-              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-            </div> -->
-          <!-- </div> -->
+          <h4 id="About" class="lead mb-4">About</h4>
+          <p id="content-title">
+          Hello, I am Kate, a fan of location strategy, have been working as a GIS Analyst for over 2 years. 
+          My main interests in GIS are: 
+          Building Web Mapping applications which provide user interaction surface and realtime data vitualization.
+          Implementing GIS applications to improve the workflow and reduce manaul processes for all the stakeholders.
+          Exploring nowaday technologies and upgrading current GIS solutions. </br>
+          </br></p>
+          
+          <p id="content">
+          My skills are: </br>
+          &nbsp; ArcGIS, PostGIS, Geocortex</br>
+          &nbsp; Html5Viewer, Mapbox, ArcGIS Online, ArcGIS Web Appbuilder</br>
+          &nbsp; Python, VB, C Sharp, JavaScript</br>
+          &nbsp; arcpy, Numpy, geoPandas</br>
+          &nbsp; SQL, MySQL, PostgreSQL</br>
+          &nbsp; Windows, Git, Code Pen, Anaconda, Node.js</br>
+          &nbsp; Tomcat, IIS, TLS/SSL Certificates</br>
+          </p>
+          
         </div>
+        <div class="px-4 py-5 my-5 text-center">
+          <h4 id="Work" style="font-family: 'Poppins', cursive;">Some samples of my work:</h4>
+          <p id="content-title">2019 Light Up Peru Project</p>
+          <img src="images/LightUpPeru.png" class="img-fluid" alt="...">
+          </br></br>
+          <p id="content">
+            The purpose of this Capstone project is to help the non-profit organization, 
+            LUTW (Light Up The World), by determining ideal locations to install solar panel systems 
+            by implementing geographic information systems. 
+            The web mapping service will allow users to obtain the information while they are at site which 
+            they can either view the map or extract the data through the interface. </p>
+            <p id="content" style="font-weight: bold">
+            Methodologies: ArcPy, 3D spatial extension, ArcGIS Online, ArcGIS Web AppBuilder</p>
+     
+
+        
+        </br></br>
+          <p id="content-title">2019 International Tourist Arrivals ‐ Japan</p>
+          <img src="images/InternationalArrivalsJP.png" class="img-fluid" alt="...">
+
+          <p id="content">
+          The entry tourism of visiting has reached to 27 million tourists in Japan in 2017. 
+          The growth of the tourism has successfully increased the Japanese income rapidly. 
+          According to the Japan Tourism Statistics, it has been found that the top international markets were mostly from 
+          East Asia and South Asia, due to the closer geographical locations. 
+          The thematic maps were made for these 3 main visit purposes, including tourism, business and other arrivals. 
+          </p>
+          <p id="content" style="font-weight: bold">
+          Methodologies: Thematic maps and Sturgis rule.
+          </p>
         </div>
+
+      </div>
     </main>
+    <footer class="footer mt-auto py-3 bg-grey">
+      <div class="container">
+        <span class="text-muted">Katie GIS 2021</span>
+      </div>
+    </footer>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
