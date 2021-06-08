@@ -9,9 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
 
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     <header>
       
       <nav id="header-nav" class="navbar navbar-default">
@@ -40,7 +78,7 @@
               </li>
               
               <li>
-               <a href="katemymy@gmail.com">
+               <a href="mailto:katemymy@gmail.com">
                   <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs"> Contact</a>
               </li>
               <li id="github" class="hidden-xs">
@@ -58,64 +96,111 @@
     </header>
     <main>
         <div class="container">
-        <div class="px-4 py-5 my-5 text-center">
+        <div class="px-4 py-5 my-5 text-left">
           
           
-          <h4 id="About" class="lead mb-4">About</h4>
-          <p id="content-title">
-          Hello, I am Kate, a fan of location strategy, have been working as a GIS Analyst for over 2 years. 
-          My main interests in GIS are: 
-          Building Web Mapping applications which provide user interaction surface and realtime data vitualization.
-          Implementing GIS applications to improve the workflow and reduce manaul processes for all the stakeholders.
-          Exploring nowaday technologies and upgrading current GIS solutions. </br>
+          <h4 id="About" class="title">About</h4>
+          
+          </br></br>
+          <p id="content"> I am Kate, a fan of spatial analysis and location strategy, have been working as a GIS Analyst for over 2 years in Victoria, BC.</br>
+          My northern star is Data Science and I have successfully received both degrees in Information Management and Geographic Information Systems. </br>
+          My focus is on what to be highlighed in this massive IT galaxy. </br></br></br>
+          My main interests and current responsibilities in GIS are: 
           </br></p>
-          
+          <div id="content">
+          <ul>
+            <li>Building Web Mapping applications which provide user interaction surface and realtime data vitualization.</li>
+            <li>Implementing GIS applications to improve the workflow and reduce manaul processes for all the stakeholders.</li>
+            <li>Exploring nowaday technologies and upgrading current GIS solutions.</li>
+            <li>Locating where the neighbor furiends live, I mean, I am a squirrel observer!</li>
+          </ul>
+          </div>
           <p id="content">
-          My skills are: </br>
-          &nbsp; ArcGIS, PostGIS, Geocortex</br>
-          &nbsp; Html5Viewer, Mapbox, ArcGIS Online, ArcGIS Web Appbuilder</br>
-          &nbsp; Python, VB, C Sharp, JavaScript</br>
-          &nbsp; arcpy, Numpy, geoPandas</br>
-          &nbsp; SQL, MySQL, PostgreSQL</br>
-          &nbsp; Windows, Git, Code Pen, Anaconda, Node.js</br>
-          &nbsp; Tomcat, IIS, TLS/SSL Certificates</br>
-          </p>
+          And I am also staying on trending technologies in terms of web development, such as HTML5, CSS3 and Bootstrap v5.0. 
+           </br></p>
+           </br></br></br></br>
+          
           
         </div>
-        <div class="px-4 py-5 my-5 text-center">
-          <h4 id="Work" style="font-family: 'Poppins', cursive;">Some samples of my work:</h4>
-          <p id="content-title">2019 Light Up Peru Project</p>
-          <img src="images/LightUpPeru.png" class="img-fluid" alt="...">
-          </br></br>
-          <p id="content">
-            The purpose of this Capstone project is to help the non-profit organization, 
+        <div class="px-4 py-5 my-5 text-left">
+          <h4 id="Work" class="title">Some samples of my work:</h4>
+          
+        </div>
+        <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="content-title">Light Up Peru</h2>
+        <p id="content">The purpose of this Capstone project is to help the non-profit organization, 
             LUTW (Light Up The World), by determining ideal locations to install solar panel systems 
             by implementing geographic information systems. 
             The web mapping service will allow users to obtain the information while they are at site which 
-            they can either view the map or extract the data through the interface. </p>
-            <p id="content" style="font-weight: bold">
-            Methodologies: ArcPy, 3D spatial extension, ArcGIS Online and ArcGIS Web AppBuilder</p>
-     
+            they can either view the map or extract the data through the interface.</p>
+            <span class="content">Methodologies: ArcPy, 3D spatial extension, ArcGIS Online and ArcGIS Web AppBuilder</span>
+            
+      </div>
+      <div class="col-md-5">
+        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+        <img src="images/LightUpPeru.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+        width="500" height="400">
 
+      </div>
+    </div>
+
+    
+
+    
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+    <div class="col-md-7">
+        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+        <img src="images/StreamflowsInBC.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+        width="500" height="450">
+
+      </div>
+      <div class="col-md-5">
+        <h2 class="content-title">Streamflow Status in BC</h2>
+        <p id="content">This web map is to demostrate the experiments on ArcGIS API for JavaScript with an operational feature layer, the Streamflow dataset retrieved from DataBC Catalog.
+        Also, a custom widget built for user to select and zoom to an area of interest on the map.</p>
+        <span class="content">Methodologies: ArcGIS API for JavaScript 4.18, HTML5/CSS3 and TypeScript</span>
         
-        </br></br>
-          <p id="content-title">2019 International Tourist Arrivals ‐ Japan</p>
-          <img src="images/InternationalArrivalsJP.png" class="img-fluid" alt="...">
+      </div>
+      
+    </div>
 
-          <p id="content">
-          The entry tourism of visiting has reached to 27 million tourists in Japan in 2017. 
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="content-title">International Tourist Arrivals ‐ Japan</h2>
+        <p id="content">The entry tourism of visiting has reached to 27 million tourists in Japan in 2017. 
           The growth of the tourism has successfully increased the Japanese income rapidly. 
           According to the Japan Tourism Statistics, it has been found that the top international markets were mostly from 
           East Asia and South Asia, due to the closer geographical locations. 
-          The thematic maps were made for these 3 main visit purposes, including tourism, business and other arrivals. 
-          </p>
-          <p id="content" style="font-weight: bold">
-          Methodologies: Thematic maps and Sturgis rule.
-          </p>
-        </div>
-          
+          The thematic maps were made for these 3 main visit purposes, including tourism, business and other arrivals.</p>
+        <span class="content">Methodologies: Thematic maps, Classfication and Sturgis rule.</span>
+        
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" 
+        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></svg> -->
+        <img src="images/InternationalArrivalsJP.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+        width="500" height="400">
+        
+      </div>
+    </div>
       </div>
     </main>
+    </br></br></br></br></br>
+
+
+
     <!-- Footer -->
     <footer class="page-footer font-small blue">
 
@@ -123,10 +208,10 @@
       <div class="footer-copyright text-center py-3">© 2021 Copyright:
       <a href="https://github.com/KatieGIS"> KatieGIS</a>
       </div>
-  <!-- Copyright -->
+      <!-- Copyright -->
 
-</footer>
-<!-- Footer --> 
+    </footer>
+    <!-- Footer --> 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
